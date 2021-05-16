@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <ui:composition template="/template.xhtml">
+
+        <ui:define name="title">Simple CDI PrimeCheck</ui:define>
+        <ui:define name="head">Simple CDI Example</ui:define>
+        <ui:define name="content">
+            <h:form id="checkme">
+                   <p><h:outputLabel value="Enter number: " for="num"/>
+                  <h:inputText id="num" value="#{printer.num}"/></p>
+               <p><h:commandButton value="CheckPrime" 
+                                   action="#{printer.checkPrime}"/></p>
+               <p><h:outputText value="#{printer.result}"/> </p>
+            </h:form>
+        </ui:define>
+
+    </ui:composition>
+</html>
+
