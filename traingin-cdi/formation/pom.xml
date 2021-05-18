@@ -97,7 +97,8 @@
     
     <modules>
 
-        <module>cdi</module>
+       <!-- <module>cdi</module> -->
+        <module>ejb</module>
          
     </modules>
     
