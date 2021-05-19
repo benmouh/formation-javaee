@@ -1,27 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.glassfish.formation</groupId>
-    <artifactId>ejb</artifactId>
+    <artifactId>jaxws</artifactId>
+    <name>jaxws</name>
     <packaging>pom</packaging>
-    <name>ejb</name>
   
     <parent>
         <groupId>org.glassfish.formation</groupId>
-        <artifactId>formation</artifactId>
+        <artifactId>webservice</artifactId>
         <version>8.1-SNAPSHOT</version>
+        
     </parent>
     
+    <properties>
+        <jaxws-maven-plugin.version>2.2</jaxws-maven-plugin.version>
+    </properties>
+    
     <modules>
-     
-        <module>async</module>
-        <module>cart</module>
-        <module>converter</module>
-        <module>counter</module>
-        <module>helloservice</module>
-        <module>interceptor</module>
-        <module>standalone</module>
-        <module>timersession</module>
-       
+        <module>helloservice-war</module>
+        <module>hello-appclient</module>
+        <module>hello-webclient</module>
     </modules>
     
     <build>
@@ -33,15 +31,6 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-ejb-plugin</artifactId>
-                <version>${maven.ejb.plugin.version}</version>
-                <configuration>
-                    <ejbVersion>3.2</ejbVersion>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 </project>
