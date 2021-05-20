@@ -1,0 +1,11 @@
+formation/roster/entity/Player_.class
+formation/roster/entity/Team.class
+formation/roster/entity/WinterLeague_.class
+formation/roster/entity/SummerLeague_.class
+formation/roster/entity/Team_.class
+formation/roster/entity/League.class
+formation/roster/entity/Player.class
+formation/roster/entity/SummerLeague.class
+formation/roster/entity/WinterLeague.class
+formation/roster/request/RequestBean.class
+formation/roster/entity/League_.class

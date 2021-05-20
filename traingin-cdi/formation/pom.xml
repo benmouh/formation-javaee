@@ -99,6 +99,7 @@
 
        <!-- <module>cdi</module> -->
         <module>ejb</module>
+         <module>jpa</module>
          
     </modules>
     
