@@ -1,0 +1,9 @@
+formation/addressbook/ejb/AbstractFacade.class
+formation/addressbook/web/util/PaginationHelper.class
+formation/addressbook/web/ContactController$1.class
+formation/addressbook/web/ContactController.class
+formation/addressbook/ejb/ContactFacade.class
+formation/addressbook/web/util/JsfUtil.class
+formation/addressbook/web/ContactController$ContactControllerConverter.class
+formation/addressbook/entity/Contact_.class
+formation/addressbook/entity/Contact.class
